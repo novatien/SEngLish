@@ -1,0 +1,754 @@
+[
+    {
+      "ID": "1",
+      "Word": "additional",
+      "Type": "adj",
+      "Pronounce": "/əˈdɪʃ.ən.əl/",
+      "Meaning": "bổ sung",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/a/add/addit/additional.mp3"
+    },
+    {
+      "ID": "2",
+      "Word": "admit",
+      "Type": "v",
+      "Pronounce": "/ədˈmɪt/",
+      "Meaning": "thừa nhận",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/a/adm/admit/admit.mp3"
+    },
+    {
+      "ID": "3",
+      "Word": "agree",
+      "Type": "v",
+      "Pronounce": "/əˈɡriː/",
+      "Meaning": "đồng ý",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/a/agr/agree/agree.mp3"
+    },
+    {
+      "ID": "4",
+      "Word": "announce",
+      "Type": "v",
+      "Pronounce": "/əˈnaʊns/",
+      "Meaning": "thông báo",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/a/ann/annou/announce.mp3"
+    },
+    {
+      "ID": "5",
+      "Word": "apologize",
+      "Type": "v",
+      "Pronounce": "/əˈpɑː.lə.dʒaɪz/",
+      "Meaning": "xin lỗi",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/a/apo/apolo/apologize.mp3"
+    },
+    {
+      "ID": "6",
+      "Word": "approve",
+      "Type": "v",
+      "Pronounce": "/əˈpruːv/",
+      "Meaning": "tán thành",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/a/app/appro/approve.mp3"
+    },
+    {
+      "ID": "7",
+      "Word": "argue",
+      "Type": "v",
+      "Pronounce": "/ˈɑːrɡ.juː/",
+      "Meaning": "tranh luận",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/a/arg/argue/argue.mp3"
+    },
+    {
+      "ID": "8",
+      "Word": "blame",
+      "Type": "v",
+      "Pronounce": "/bleɪm/",
+      "Meaning": "khiển trách",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/b/bla/blame/blame.mp3"
+    },
+    {
+      "ID": "9",
+      "Word": "brief",
+      "Type": "v",
+      "Pronounce": "/briːf/",
+      "Meaning": "tóm tắt",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/b/bri/brief/brief.mp3"
+    },
+    {
+      "ID": "10",
+      "Word": "brochure",
+      "Type": "n",
+      "Pronounce": "/broʊˈʃʊr/",
+      "Meaning": "cuốn sách nhỏ",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/b/bro/broch/brochure.mp3"
+    },
+    {
+      "ID": "11",
+      "Word": "certain",
+      "Type": "adj",
+      "Pronounce": "/ˈsɝː.tən/",
+      "Meaning": "chắc chắn",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/eus/eus70/eus70760.mp3"
+    },
+    {
+      "ID": "12",
+      "Word": "comma",
+      "Type": "n",
+      "Pronounce": "/ˈkɑː.mə/",
+      "Meaning": "dấu phẩy",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/c/com/comma/comma.mp3"
+    },
+    {
+      "ID": "13",
+      "Word": "complaint",
+      "Type": "n",
+      "Pronounce": "/kəmˈpleɪnt/",
+      "Meaning": "phàn nàn",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/c/com/compl/complaint.mp3"
+    },
+    {
+      "ID": "14",
+      "Word": "complete",
+      "Type": "v",
+      "Pronounce": "/kəmˈpliːt/",
+      "Meaning": "hoàn tất",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/c/com/compl/complete.mp3"
+    },
+    {
+      "ID": "15",
+      "Word": "conference",
+      "Type": "n",
+      "Pronounce": "/ˈkɑːn.fɚ.əns/",
+      "Meaning": "hội nghị",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/c/con/confe/conference.mp3"
+    },
+    {
+      "ID": "16",
+      "Word": "confirm",
+      "Type": "v",
+      "Pronounce": "/kənˈfɝːm/",
+      "Meaning": "xác nhận",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/c/con/confi/confirm.mp3"
+    },
+    {
+      "ID": "17",
+      "Word": "contact",
+      "Type": "v",
+      "Pronounce": "/ˈkɑːn.tækt/",
+      "Meaning": "liên lạc",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/c/con/conta/contact.mp3"
+    },
+    {
+      "ID": "18",
+      "Word": "convince",
+      "Type": "v",
+      "Pronounce": "/kənˈvɪns/",
+      "Meaning": "thuyết phục",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/c/con/convi/convince.mp3"
+    },
+    {
+      "ID": "19",
+      "Word": "discuss",
+      "Type": "v",
+      "Pronounce": "/dɪˈskʌs/",
+      "Meaning": "thảo luận",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/d/dis/discu/discuss.mp3"
+    },
+    {
+      "ID": "20",
+      "Word": "extreme",
+      "Type": "adj",
+      "Pronounce": "/ɪkˈstriːm/",
+      "Meaning": "vô cùng",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/ext/extre/extreme.mp3"
+    },
+    {
+      "ID": "21",
+      "Word": "hint",
+      "Type": "n",
+      "Pronounce": "/hɪnt/",
+      "Meaning": "lời gợi ý",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/h/hin/hint_/hint.mp3"
+    },
+    {
+      "ID": "22",
+      "Word": "hurry",
+      "Type": "v",
+      "Pronounce": "/ˈhɝː.i/",
+      "Meaning": "thúc giục",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/h/hur/hurry/hurry.mp3"
+    },
+    {
+      "ID": "23",
+      "Word": "include",
+      "Type": "v",
+      "Pronounce": "/ɪnˈkluːd/",
+      "Meaning": "bao gồm",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/i/inc/inclu/include.mp3"
+    },
+    {
+      "ID": "24",
+      "Word": "interact",
+      "Type": "v",
+      "Pronounce": "/ˌɪn.t̬ɚˈækt/",
+      "Meaning": "tương tác",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/eus/eus72/eus72473.mp3"
+    },
+    {
+      "ID": "25",
+      "Word": "need",
+      "Type": "v",
+      "Pronounce": "/niːd/",
+      "Meaning": "cần",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/k/kne/knead/knead.mp3"
+    },
+    {
+      "ID": "26",
+      "Word": "order",
+      "Type": "v",
+      "Pronounce": "/ˈɔːr.dɚ/",
+      "Meaning": "gọi món",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/eus/eus75/eus75280.mp3"
+    },
+    {
+      "ID": "27",
+      "Word": "postcard",
+      "Type": "n",
+      "Pronounce": "/ˈpoʊst.kɑːrd/",
+      "Meaning": "bưu thiếp",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/p/pos/postc/postcard.mp3"
+    },
+    {
+      "ID": "28",
+      "Word": "prepare",
+      "Type": "v",
+      "Pronounce": "/prɪˈper/",
+      "Meaning": "chuẩn bị",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/p/pre/prepa/prepare.mp3"
+    },
+    {
+      "ID": "29",
+      "Word": "reason",
+      "Type": "n",
+      "Pronounce": "/ˈriː.zən/",
+      "Meaning": "lý do",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/r/rea/reaso/reason.mp3"
+    },
+    {
+      "ID": "30",
+      "Word": "stamp",
+      "Type": "n",
+      "Pronounce": "/stæmp/",
+      "Meaning": "con tem",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/s/sta/stamp/stamp.mp3"
+    },
+    {
+      "ID": "31",
+      "Word": "whole",
+      "Type": "n",
+      "Pronounce": "/hoʊl/",
+      "Meaning": "toàn bộ",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/h/hol/hole_/hole.mp3"
+    },
+    {
+      "ID": "32",
+      "Word": "almost",
+      "Type": "adv",
+      "Pronounce": "/ˈɑːl.moʊst/",
+      "Meaning": "hầu như",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/a/alm/almos/almost.mp3"
+    },
+    {
+      "ID": "33",
+      "Word": "confidence",
+      "Type": "n",
+      "Pronounce": "/ˈkɑːn.fə.dəns/",
+      "Meaning": "sự tự tin",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/c/con/confi/confidence.mp3"
+    },
+    {
+      "ID": "34",
+      "Word": "despite",
+      "Type": "adv",
+      "Pronounce": "/dɪˈspaɪt/",
+      "Meaning": "mặc dù",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/d/des/despi/despite.mp3"
+    },
+    {
+      "ID": "35",
+      "Word": "emphasize",
+      "Type": "v",
+      "Pronounce": "/ˈem.fə.saɪz/",
+      "Meaning": "nhấn mạnh",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/emp/empha/emphasize.mp3"
+    },
+    {
+      "ID": "36",
+      "Word": "express",
+      "Type": "v",
+      "Pronounce": "/ɪkˈspres/",
+      "Meaning": "bày tỏ",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/exp/expre/express.mp3"
+    },
+    {
+      "ID": "37",
+      "Word": "guess",
+      "Type": "v,n",
+      "Pronounce": "/ɡes/",
+      "Meaning": "đoán",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/g/gue/guess/guess.mp3"
+    },
+    {
+      "ID": "38",
+      "Word": "imply",
+      "Type": "v",
+      "Pronounce": "/ɪmˈplaɪ/",
+      "Meaning": "ám chỉ",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/i/imp/imply/imply.mp3"
+    },
+    {
+      "ID": "39",
+      "Word": "inform",
+      "Type": "v",
+      "Pronounce": "/ɪnˈfɔːrm/",
+      "Meaning": "thông báo",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/i/inf/infor/inform.mp3"
+    },
+    {
+      "ID": "40",
+      "Word": "initial",
+      "Type": "adj",
+      "Pronounce": "/ɪˈnɪʃ.əl/",
+      "Meaning": "mở đầu",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/i/ini/initi/initial.mp3"
+    },
+    {
+      "ID": "41",
+      "Word": "idiom",
+      "Type": "n",
+      "Pronounce": "/ˈɪd.i.əm/",
+      "Meaning": "thành ngữ",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/i/idi/idiom/idiom.mp3"
+    },
+    {
+      "ID": "42",
+      "Word": "insist",
+      "Type": "v",
+      "Pronounce": "/ɪnˈsɪst/",
+      "Meaning": "khăng khăng",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/i/ins/insis/insist.mp3"
+    },
+    {
+      "ID": "43",
+      "Word": "issue",
+      "Type": "n",
+      "Pronounce": "/ˈɪʃ.uː/ /ˈɪs.juː/",
+      "Meaning": "vấn đề",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/i/iss/issue/issue.mp3"
+    },
+    {
+      "ID": "44",
+      "Word": "mention",
+      "Type": "v",
+      "Pronounce": "/ˈmen.ʃən/",
+      "Meaning": "đề cập",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/m/men/menti/mention.mp3"
+    },
+    {
+      "ID": "45",
+      "Word": "interrupt",
+      "Type": "v",
+      "Pronounce": "/ˌɪn.t̬əˈrʌpt/",
+      "Meaning": "gián đoạn",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/eus/eus72/eus72546.mp3"
+    },
+    {
+      "ID": "46",
+      "Word": "material",
+      "Type": "n",
+      "Pronounce": "/məˈtɪr.i.əl/",
+      "Meaning": "nguyên liệu",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/u/usc/uscld/uscld00868.mp3"
+    },
+    {
+      "ID": "47",
+      "Word": "inquiry",
+      "Type": "n",
+      "Pronounce": "/ˈɪŋ.kwɚ.i/",
+      "Meaning": "cuộc điều tra",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/i/inq/inqui/inquiry.mp3"
+    },
+    {
+      "ID": "48",
+      "Word": "persuade",
+      "Type": "v",
+      "Pronounce": "/pɚˈsweɪd/",
+      "Meaning": "thuyết phục",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/p/per/persu/persuade.mp3"
+    },
+    {
+      "ID": "49",
+      "Word": "predict",
+      "Type": "v",
+      "Pronounce": "/prɪˈdɪkt/",
+      "Meaning": "dự báo",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/p/pre/predi/predict.mp3"
+    },
+    {
+      "ID": "50",
+      "Word": "quote",
+      "Type": "v",
+      "Pronounce": "/kwoʊt/",
+      "Meaning": "trích dẫn",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/q/quo/quote/quote.mp3"
+    },
+    {
+      "ID": "51",
+      "Word": "phase",
+      "Type": "n",
+      "Pronounce": "/feɪz/",
+      "Meaning": "giai đoạn",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/f/faz/faze_/faze.mp3"
+    },
+    {
+      "ID": "52",
+      "Word": "questionnaire",
+      "Type": "n",
+      "Pronounce": "/ˌkwes.tʃəˈner/",
+      "Meaning": "câu hỏi",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/q/que/quest/questionnaire.mp3"
+    },
+    {
+      "ID": "53",
+      "Word": "paragraph",
+      "Type": "n",
+      "Pronounce": "/ˈper.ə.ɡræf/",
+      "Meaning": "đoạn văn",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/p/par/parag/paragraph.mp3"
+    },
+    {
+      "ID": "54",
+      "Word": "recent",
+      "Type": "adj",
+      "Pronounce": "/ˈriː.sənt/",
+      "Meaning": "gần đây",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/r/rec/recen/recent.mp3"
+    },
+    {
+      "ID": "55",
+      "Word": "respond",
+      "Type": "v",
+      "Pronounce": "/rɪˈspɑːnd/",
+      "Meaning": "phản hồi",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/r/res/respo/respond.mp3"
+    },
+    {
+      "ID": "56",
+      "Word": "scream",
+      "Type": "v",
+      "Pronounce": "/skriːm/",
+      "Meaning": "thét",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/s/scr/screa/scream.mp3"
+    },
+    {
+      "ID": "57",
+      "Word": "reflect",
+      "Type": "v",
+      "Pronounce": "/rɪˈflekt/",
+      "Meaning": "phản chiếu",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/r/ref/refle/reflect.mp3"
+    },
+    {
+      "ID": "58",
+      "Word": "shout",
+      "Type": "v",
+      "Pronounce": "/ʃaʊt/",
+      "Meaning": "hét lên",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/s/sho/shout/shout.mp3"
+    },
+    {
+      "ID": "59",
+      "Word": "survey",
+      "Type": "v",
+      "Pronounce": "/ˈsɝː.veɪ/",
+      "Meaning": "khảo sát",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/s/sur/surve/survey_01_00.mp3"
+    },
+    {
+      "ID": "60",
+      "Word": "tension",
+      "Type": "n",
+      "Pronounce": "/ˈten.ʃən/",
+      "Meaning": "căng thẳng",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/t/ten/tensi/tension.mp3"
+    },
+    {
+      "ID": "61",
+      "Word": "urge",
+      "Type": "v",
+      "Pronounce": "/ɝːdʒ/",
+      "Meaning": "thúc giục",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/u/urg/urge_/urge.mp3"
+    },
+    {
+      "ID": "62",
+      "Word": "warn",
+      "Type": "v",
+      "Pronounce": "/wɔːrn/",
+      "Meaning": "cảnh báo",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/w/war/warn_/warn.mp3"
+    },
+    {
+      "ID": "63",
+      "Word": "trick",
+      "Type": "n",
+      "Pronounce": "/trɪk/",
+      "Meaning": "thủ thuật, mẹo",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/t/tri/trick/trick.mp3"
+    },
+    {
+      "ID": "64",
+      "Word": "vowel",
+      "Type": "n",
+      "Pronounce": "/vaʊəl/",
+      "Meaning": "nguyên âm",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/v/vow/vowel/vowel.mp3"
+    },
+    {
+      "ID": "65",
+      "Word": "address",
+      "Type": "n",
+      "Pronounce": "/ˈæd.res/",
+      "Meaning": "địa chỉ",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/eus/eus70/eus70074.mp3"
+    },
+    {
+      "ID": "66",
+      "Word": "advice",
+      "Type": "n",
+      "Pronounce": "/ədˈvaɪs/",
+      "Meaning": "lời khuyên",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/a/adv/advic/advice.mp3"
+    },
+    {
+      "ID": "67",
+      "Word": "annual",
+      "Type": "adj",
+      "Pronounce": "/ˈæn.ju.əl/",
+      "Meaning": "hàng năm",
+      "Url": "https://dictionary.cambridge.org/media/english/uk_pron/u/uka/ukann/ukannou007.mp3"
+    },
+    {
+      "ID": "68",
+      "Word": "appear",
+      "Type": "v",
+      "Pronounce": "/əˈpɪr/",
+      "Meaning": "xuất hiện",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/a/app/appea/appear.mp3"
+    },
+    {
+      "ID": "69",
+      "Word": "applause",
+      "Type": "n",
+      "Pronounce": "/əˈplɑːz/",
+      "Meaning": "tiếng vỗ tay",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/a/app/appla/applause.mp3"
+    },
+    {
+      "ID": "70",
+      "Word": "appointment",
+      "Type": "n",
+      "Pronounce": "/əˈpɔɪnt.mənt/",
+      "Meaning": "cuộc hẹn",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/a/app/appoi/appointment.mp3"
+    },
+    {
+      "ID": "71",
+      "Word": "borrow",
+      "Type": "v",
+      "Pronounce": "/ˈbɑːr.oʊ/",
+      "Meaning": "vay, mượn",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/b/bor/borro/borrow.mp3"
+    },
+    {
+      "ID": "72",
+      "Word": "bother",
+      "Type": "v",
+      "Pronounce": "/ˈbɑː.ðɚ/",
+      "Meaning": "phiền",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/b/bot/bothe/bother.mp3"
+    },
+    {
+      "ID": "73",
+      "Word": "claim",
+      "Type": "v",
+      "Pronounce": "/kleɪm/",
+      "Meaning": "tự nhận",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/c/cla/claim/claim.mp3"
+    },
+    {
+      "ID": "74",
+      "Word": "client",
+      "Type": "n",
+      "Pronounce": "/ˈklaɪ.ənt/",
+      "Meaning": "khách hàng",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/c/cli/clien/client.mp3"
+    },
+    {
+      "ID": "75",
+      "Word": "conversation",
+      "Type": "n",
+      "Pronounce": "/ˌkɑːn.vɚˈseɪ.ʃən/",
+      "Meaning": "cuộc đối thoại",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/c/con/conve/conversation.mp3"
+    },
+    {
+      "ID": "76",
+      "Word": "deny",
+      "Type": "v",
+      "Pronounce": "/dɪˈnaɪ/",
+      "Meaning": "phủ nhận",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/eus/eus71/eus71221.mp3"
+    },
+    {
+      "ID": "77",
+      "Word": "depress",
+      "Type": "v",
+      "Pronounce": "/dɪˈpres/",
+      "Meaning": "chán nản",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/d/dep/depre/depress.mp3"
+    },
+    {
+      "ID": "78",
+      "Word": "diary",
+      "Type": "n",
+      "Pronounce": "/ˈdaɪr.i/",
+      "Meaning": "sổ nhật ký",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/d/dia/diary/diary.mp3"
+    },
+    {
+      "ID": "79",
+      "Word": "forget",
+      "Type": "v",
+      "Pronounce": "/fɚˈɡet/",
+      "Meaning": "quên",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/eus/eus71/eus71877.mp3"
+    },
+    {
+      "ID": "80",
+      "Word": "invite",
+      "Type": "v",
+      "Pronounce": "/ɪnˈvaɪt/",
+      "Meaning": "mời",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/i/inv/invit/invite.mp3"
+    },
+    {
+      "ID": "81",
+      "Word": "later",
+      "Type": "adv",
+      "Pronounce": "/ˈleɪ.t̬ɚ/",
+      "Meaning": "một lát sau",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/u/usc/uscld/uscld00791.mp3"
+    },
+    {
+      "ID": "82",
+      "Word": "matter",
+      "Type": "n",
+      "Pronounce": "/ˈmæt̬.ɚ/",
+      "Meaning": "vấn đề",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/eus/eus72/eus72937.mp3"
+    },
+    {
+      "ID": "83",
+      "Word": "obtain",
+      "Type": "v",
+      "Pronounce": "/əbˈteɪn/",
+      "Meaning": "đạt được",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/eus/eus75/eus75131.mp3"
+    },
+    {
+      "ID": "84",
+      "Word": "possess",
+      "Type": "v",
+      "Pronounce": "/pəˈzes/",
+      "Meaning": "sở hữu",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/p/pos/posse/possess.mp3"
+    },
+    {
+      "ID": "85",
+      "Word": "purpose",
+      "Type": "n",
+      "Pronounce": "/ˈpɝː.pəs/",
+      "Meaning": "mục đích",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/p/pur/purpo/purpose.mp3"
+    },
+    {
+      "ID": "86",
+      "Word": "remember",
+      "Type": "v",
+      "Pronounce": "/rɪˈmem.bɚ/",
+      "Meaning": "nhớ",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/r/rem/remem/remember.mp3"
+    },
+    {
+      "ID": "87",
+      "Word": "remind",
+      "Type": "v",
+      "Pronounce": "/rɪˈmaɪnd/",
+      "Meaning": "nhắc nhở",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/r/rem/remin/remind.mp3"
+    },
+    {
+      "ID": "88",
+      "Word": "rumor",
+      "Type": "n",
+      "Pronounce": "/ˈruː.mər/",
+      "Meaning": "tin đồn",
+      "Url": "https://dictionary.cambridge.org/media/english/uk_pron/u/ukr/ukroo/ukrooke004.mp3"
+    },
+    {
+      "ID": "89",
+      "Word": "several",
+      "Type": "adj",
+      "Pronounce": "/ˈsev.ɚ.əl/",
+      "Meaning": "một số",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/s/sev/sever/several.mp3"
+    },
+    {
+      "ID": "90",
+      "Word": "speech",
+      "Type": "n",
+      "Pronounce": "/spiːtʃ/",
+      "Meaning": "phát biểu",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/s/spe/speec/speech.mp3"
+    },
+    {
+      "ID": "91",
+      "Word": "symbol",
+      "Type": "n",
+      "Pronounce": "/ˈsɪm.bəl/",
+      "Meaning": "biểu tượng",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/c/cym/cymba/cymbal.mp3"
+    },
+    {
+      "ID": "92",
+      "Word": "therefore",
+      "Type": "adv",
+      "Pronounce": "/ˈðer.fɔːr/",
+      "Meaning": "vì vậy",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/t/the/there/therefore.mp3"
+    },
+    {
+      "ID": "93",
+      "Word": "translate",
+      "Type": "v",
+      "Pronounce": "/trænsˈleɪt/",
+      "Meaning": "dịch",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/eus/eus74/eus74608.mp3"
+    },
+    {
+      "ID": "94",
+      "Word": "underline",
+      "Type": "v",
+      "Pronounce": "/ˌʌn.dɚˈlaɪn/",
+      "Meaning": "gạch dưới",
+      "Url": "https://dictionary.cambridge.org/media/english/us_pron/e/eus/eus74/eus74717.mp3"
+    }
+  ]

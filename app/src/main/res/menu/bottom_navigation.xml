@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+   <item
+       android:id="@+id/studyFragment"
+       android:title="Học"
+       android:icon="@drawable/ic_study"
+       />
+    <item
+        android:id="@+id/examFragment"
+        android:title="Thi"
+        android:icon="@drawable/ic_exam"
+        />
+    <item
+        android:id="@+id/favouriteFragment"
+        android:title="Yêu Thích"
+        android:icon="@drawable/ic_favourite"
+        />
+
+</menu>
