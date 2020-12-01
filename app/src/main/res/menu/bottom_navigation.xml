@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-   <item
+    <item
+        android:id="@+id/personalFragment"
+        android:title="Cá nhân"
+        android:icon="@drawable/ic_personal"
+        />
+    <item
        android:id="@+id/studyFragment"
        android:title="Học"
        android:icon="@drawable/ic_study"
@@ -15,6 +20,11 @@
         android:id="@+id/favouriteFragment"
         android:title="Yêu Thích"
         android:icon="@drawable/ic_favourite"
+        />
+    <item
+        android:id="@+id/ratingFragment"
+        android:title="Xếp Hạng"
+        android:icon="@drawable/ic_cup"
         />
 
 </menu>

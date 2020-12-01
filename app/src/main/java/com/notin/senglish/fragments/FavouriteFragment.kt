@@ -1,11 +1,16 @@
 package com.notin.senglish.fragments
 
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.app.AppCompatActivity
 import com.notin.senglish.R
+import com.notin.senglish.adapter.CustomFavouriteAdapter
+import com.notin.senglish.model.Word
+import kotlinx.android.synthetic.main.fragment_favourite.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -27,6 +32,17 @@ class FavouriteFragment : Fragment() {
     }
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
+        (activity as AppCompatActivity).supportActionBar!!.setDisplayHomeAsUpEnabled(true)
+        (activity as AppCompatActivity).supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_main_menu)
+        var arrWords = ArrayList<Word>()
+        arrWords.add(Word("Hello","Xin chào"))
+        arrWords.add(Word("Good","Tốt"))
+        arrWords.add(Word("Think","Suy nghĩ"))
+        arrWords.add(Word("Many","Nhiều"))
+        arrWords.add(Word("Love","Yêu"))
+        var adapter = CustomFavouriteAdapter(activity as Context, arrWords)
+        rvWordFavourite.adapter = adapter
+
         super.onActivityCreated(savedInstanceState)
     }
 

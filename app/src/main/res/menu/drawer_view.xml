@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Lesson">
+        <menu>
+            <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_lesson1"
+            android:icon="@drawable/ic_study"
+            android:title="Lesson 1"/>
+        <item android:id="@+id/nav_lesson2"
+            android:icon="@drawable/ic_study"
+            android:title="Lesson 2"/>
+        <item android:id="@+id/nav_lesson3"
+            android:icon="@drawable/ic_study"
+            android:title="Lesson 3"/>
+        <item android:id="@+id/nav_lesson4"
+            android:icon="@drawable/ic_study"
+            android:title="Lesson 4"/>
+        <item android:id="@+id/nav_lesson5"
+            android:icon="@drawable/ic_study"
+            android:title="Lesson 5"/>
+            </group>
+        </menu>
+    </item>
+    <item android:title="Communicate">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/nav_logout"
+                    android:icon="@drawable/ic_logout"
+                    android:title="Logout"/>
+                <item android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_share"
+                    android:title="Share"/>
+                <item android:id="@+id/nav_help"
+                    android:icon="@drawable/ic_help"
+                    android:title="Help"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>
