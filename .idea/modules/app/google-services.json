@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "669325724840",
+    "firebase_url": "https://senglish-a8725.firebaseio.com",
+    "project_id": "senglish-a8725",
+    "storage_bucket": "senglish-a8725.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669325724840:android:6c124190f27e9a46aa469d",
+        "android_client_info": {
+          "package_name": "com.notin.senglish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669325724840-l9retht1dlefmhrai7m2fin92oqs6fk9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.notin.senglish",
+            "certificate_hash": "86bc7723517b2a5e8acb1793803e0c3f38fb6e93"
+          }
+        },
+        {
+          "client_id": "669325724840-h0eh7cihmjbqmfeamr7pd8a0qnspjkhj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhH_LwVaPiyS36Zo5RPJyyUvnIvABVmoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669325724840-h0eh7cihmjbqmfeamr7pd8a0qnspjkhj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

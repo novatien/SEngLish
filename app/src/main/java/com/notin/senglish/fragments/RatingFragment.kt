@@ -1,27 +1,25 @@
 package com.notin.senglish.fragments
 
-import android.app.Activity
+import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.notin.senglish.R
-import kotlinx.android.synthetic.main.fragment_exam.*
+import com.notin.senglish.adapter.CustomFavouriteAdapter
+import com.notin.senglish.model.Word
+import kotlinx.android.synthetic.main.fragment_favourite.*
+import kotlinx.android.synthetic.main.fragment_rating.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [ExamFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
-class ExamFragment : Fragment() {
+
+class RatingFragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -37,7 +35,13 @@ class ExamFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         (activity as AppCompatActivity).supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         (activity as AppCompatActivity).supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_main_menu)
-        //.text="ngo Tien"
+        var arrWords = ArrayList<Word>()
+        arrWords.add(Word("1. vkhai","Xin chào"))
+        arrWords.add(Word("2. tuanDung","Xin chào"))
+        arrWords.add(Word("3. baoVinh","Xin chào"))
+        arrWords.add(Word("4. thanhHau","Xin chào"))
+        var adapter = CustomFavouriteAdapter(activity as Context, arrWords)
+        rvRatings.adapter = adapter
         super.onActivityCreated(savedInstanceState)
     }
 
@@ -46,7 +50,7 @@ class ExamFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_exam, container, false)
+        return inflater.inflate(R.layout.fragment_rating, container, false)
     }
 
     companion object {
@@ -56,12 +60,12 @@ class ExamFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment ExamFragment.
+         * @return A new instance of fragment FavouriteFragment.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            ExamFragment().apply {
+            RatingFragment().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)
