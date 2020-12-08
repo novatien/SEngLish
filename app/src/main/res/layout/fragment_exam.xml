@@ -44,7 +44,7 @@
             android:background="@drawable/background2"
             android:gravity="center"
             android:padding="5dp"
-            android:text="000"
+            android:text="100"
             android:textColor="@color/yellow"
             app:autoSizeMaxTextSize="100sp"
             app:autoSizeMinTextSize="25sp"

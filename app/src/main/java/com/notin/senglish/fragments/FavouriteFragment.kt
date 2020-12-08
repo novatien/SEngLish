@@ -34,12 +34,22 @@ class FavouriteFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         (activity as AppCompatActivity).supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         (activity as AppCompatActivity).supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_main_menu)
+        var share = context?.getSharedPreferences("SEnglish", Context.MODE_PRIVATE)
+        var indexLove = share!!.getString("indexLove","")
         var arrWords = ArrayList<Word>()
-        arrWords.add(Word("Hello","Xin chào"))
-        arrWords.add(Word("Good","Tốt"))
-        arrWords.add(Word("Think","Suy nghĩ"))
-        arrWords.add(Word("Many","Nhiều"))
-        arrWords.add(Word("Love","Yêu"))
+        if(indexLove !=""){
+            var arrListLove = indexLove!!.split(",")
+            for(love in arrListLove){
+                if(love != ""){
+                    arrWords.add(Word(love,""))
+                }
+            }
+        }
+//        arrWords.add(Word("Hello","Xin chào"))
+//        arrWords.add(Word("Good","Tốt"))
+//        arrWords.add(Word("Think","Suy nghĩ"))
+//        arrWords.add(Word("Many","Nhiều"))
+//        arrWords.add(Word("Love","Yêu"))
         var adapter = CustomFavouriteAdapter(activity as Context, arrWords)
         rvWordFavourite.adapter = adapter
 

@@ -2,6 +2,7 @@ package com.notin.senglish.fragments
 
 import android.annotation.SuppressLint
 import android.os.Bundle
+import android.os.CountDownTimer
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
@@ -26,6 +27,7 @@ class ExamFragment : Fragment() {
     }
 
     var listEnglish = ArrayList<English>()
+    var count = 0
     @SuppressLint("FragmentLiveDataObserve")
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         (activity as AppCompatActivity).supportActionBar!!.setDisplayHomeAsUpEnabled(true)
@@ -37,46 +39,69 @@ class ExamFragment : Fragment() {
             for(i in englishes){
                 listEnglish.add(i)
             }
+            startExam()
         })
-        startExam()
 
 
+
+    }
+    var timer:CountDownTimer? = null
+    fun startTimer() {
+        if(timer != null){
+            timer!!.cancel()
+        }
+        txtTimes.text = "30"
+        timer = object: CountDownTimer(30000, 1000) {
+            override fun onFinish() {
+                loadQuestionByIndex(count++)
+            }
+
+            override fun onTick(millisUntilFinished: Long) {
+                var time = txtTimes.text.toString().toInt()-1
+                txtTimes.text = Integer.toString(time)
+            }
+
+        }
+        timer!!.start()
     }
     fun startExam(){
         loadQuestionByIndex(0)
     }
 
     fun loadQuestionByIndex(index:Int){
+        startTimer()
+        txtTimes.text = "30"
         if(index <= listEnglish.size-1){
             txtQuestion.text = listEnglish[index].name
         }
         var indexAnswer:Array<Int> = arrayOf(-1, -1, -1, -1)
-        indexAnswer[1]= 1
-        println("index 1="+indexAnswer[1])
+        println("size--tttt"+listEnglish.size)
 
         var rd = Random()
-//        for(i in 0..2){
-//            do{
-//                println("size english="+listEnglish.size)
-//                indexAnswer[i] = rd.nextInt(listEnglish.size)
-//            }while(indexAnswer[i] == index && isHaveArray(indexAnswer, indexAnswer[i]))
-//        }
-//
-//        var indexAnswerTrue = rd.nextInt(4)
-//        when(indexAnswerTrue){
-//            0->{
-//                setAnswer(index,indexAnswer[0], indexAnswer[1], indexAnswer[2])
-//            }
-//            1->{
-//                setAnswer(indexAnswer[0],index, indexAnswer[1], indexAnswer[2])
-//            }
-//            2->{
-//                setAnswer(indexAnswer[0], indexAnswer[1],index, indexAnswer[2])
-//            }
-//            3->{
-//                setAnswer(indexAnswer[0], indexAnswer[1], indexAnswer[2], index)
-//            }
-//        }
+        for(i in 0..2){
+            do{
+                println("size english="+listEnglish.size)
+                indexAnswer[i] = Math.min(93,rd.nextInt(listEnglish.size-1))
+            }while(indexAnswer[i] == index && isHaveArray(indexAnswer, indexAnswer[i]))
+        }
+
+        var indexAnswerTrue = rd.nextInt(4)
+        when(indexAnswerTrue){
+            0->{
+                setAnswer(index,indexAnswer[0], indexAnswer[1], indexAnswer[2])
+            }
+            1->{
+                setAnswer(indexAnswer[0],index, indexAnswer[1], indexAnswer[2])
+            }
+            2->{
+                setAnswer(indexAnswer[0], indexAnswer[1],index, indexAnswer[2])
+            }
+            3->{
+                setAnswer(indexAnswer[0], indexAnswer[1], indexAnswer[2], index)
+            }
+        }
+        listener(indexAnswerTrue)
+
     }
 
     fun isHaveArray(arr:Array<Int>, number:Int):Boolean{
@@ -92,6 +117,32 @@ class ExamFragment : Fragment() {
         btnB.text = listEnglish[a2].mean
         btnC.text = listEnglish[a3].mean
         btnD.text = listEnglish[a4].mean
+    }
+
+    fun listener(indexAnswerTrue:Int){
+        btnA.setOnClickListener {
+             handleQuestion(indexAnswerTrue, 0)
+        }
+        btnB.setOnClickListener {
+            handleQuestion(indexAnswerTrue, 1)
+        }
+        btnC.setOnClickListener {
+            handleQuestion(indexAnswerTrue, 2)
+        }
+        btnD.setOnClickListener {
+            handleQuestion(indexAnswerTrue, 3)
+        }
+    }
+    fun handleQuestion(indexAnswerTrue: Int, indexAnswer:Int){
+        count++
+        var score = txtScores.text.toString().toInt()
+        if(indexAnswerTrue == indexAnswer){
+            txtScores.text = (score + 10).toString()
+        }else{
+            //dap an sai
+        }
+        timer!!.onFinish()
+        loadQuestionByIndex(count)
     }
 
 
@@ -111,5 +162,12 @@ class ExamFragment : Fragment() {
                 arguments = Bundle().apply {
                 }
             }
+    }
+
+    override fun onDestroy() {
+        if(timer!= null){
+            timer!!.cancel()
+        }
+        super.onDestroy()
     }
 }

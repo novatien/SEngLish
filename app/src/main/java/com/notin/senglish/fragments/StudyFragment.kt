@@ -2,6 +2,8 @@ package com.notin.senglish.fragments
 
 import android.annotation.SuppressLint
 import android.app.Application
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -16,6 +18,7 @@ import com.mindorks.placeholderview.SwipeViewBuilder
 import com.notin.senglish.R
 import com.notin.senglish.dao.EnglishViewModel
 import com.notin.senglish.model.EnglishCard
+import kotlinx.android.synthetic.main.english_card_view.*
 import kotlinx.android.synthetic.main.fragment_study.*
 
 // TODO: Rename parameter arguments, choose names that match
@@ -69,6 +72,7 @@ class StudyFragment : Fragment() {
             )
         }
         })
+        listener()
 //        for (english in englishModel.getAllEnglish()) {
 //            swipeView.addView(
 //                EnglishCard(
@@ -79,6 +83,11 @@ class StudyFragment : Fragment() {
 //            )
 //        }
         super.onActivityCreated(savedInstanceState)
+    }
+    var count = 0
+    fun listener(){
+
+
     }
 
     companion object {

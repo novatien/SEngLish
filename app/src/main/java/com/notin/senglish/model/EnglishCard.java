@@ -1,6 +1,7 @@
 package com.notin.senglish.model;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.media.AudioManager;
 import android.media.MediaPlayer;
 import android.util.Log;
@@ -48,12 +49,15 @@ public class EnglishCard {
     private Context mContext;
     private SwipePlaceHolderView mSwipeView;
     private MediaPlayer mediaPlayer;
-
+    private SharedPreferences sharedPreferences;
+    private SharedPreferences.Editor editor;
     public EnglishCard(Context context, English english, SwipePlaceHolderView swipeView) {
         mContext = context;
         mEnglish = english;
         mSwipeView = swipeView;
         mediaPlayer=new MediaPlayer();
+        sharedPreferences = context.getSharedPreferences("SEnglish", Context.MODE_PRIVATE);
+        editor = sharedPreferences.edit();
     }
 
     @Resolve
@@ -70,10 +74,14 @@ public class EnglishCard {
                 mSwipeView.doSwipe(false);
             }
         });
-
         btnLove.setOnClickListener(new android.view.View.OnClickListener() {
             @Override
             public void onClick(android.view.View v) {
+                String s = sharedPreferences.getString("indexLove","");
+                if(s.indexOf(mEnglish.getName())==-1){
+                    editor.putString("indexLove",s+","+mEnglish.getName());
+                    editor.commit();
+                }
                 mSwipeView.doSwipe(true);
             }
         });
