@@ -1,10 +1,8 @@
 package com.notin.senglish.activity
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -15,6 +13,9 @@ import androidx.navigation.ui.setupWithNavController
 import com.google.android.material.navigation.NavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.notin.senglish.R
+import com.notin.senglish.database.api.EnglishApi
+import com.notin.senglish.database.api.RetrofitClient
+import io.reactivex.disposables.CompositeDisposable
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.toolbar.*
 
@@ -22,11 +23,15 @@ import kotlinx.android.synthetic.main.toolbar.*
 class MainActivity : AppCompatActivity() {
     private lateinit var navigation: NavigationView
     private lateinit var drawLayout: DrawerLayout
+    var englishApi: EnglishApi? = null
+    var compositeDisposable = CompositeDisposable()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         init()
         listener()
+        var retrofitClient = RetrofitClient()
+        retrofitClient.start(this)
 //        swipeView.getBuilder<SwipePlaceHolderView, SwipeViewBuilder<SwipePlaceHolderView>>()
 //            .setDisplayViewCount(3)
 //            .setSwipeDecor(
@@ -40,6 +45,7 @@ class MainActivity : AppCompatActivity() {
 //        for (english in Utils.loadEnglish(this.applicationContext)) {
 //            swipeView.addView(EnglishCard(applicationContext,english, swipeView))
 //        }
+
 
     }
     fun init(){
@@ -88,5 +94,8 @@ class MainActivity : AppCompatActivity() {
         }
         return super.onOptionsItemSelected(item)
     }
+
+
+
 
 }

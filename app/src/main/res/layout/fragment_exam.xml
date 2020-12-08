@@ -1,130 +1,191 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="UTF-8"?>
+
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragments.ExamFragment"
+    android:background="@drawable/background"
     android:orientation="vertical"
-    android:weightSum="7">
+    android:weightSum="10">
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_height="0dp">
-        <TextView
-            android:background="#294A2A"
-            android:layout_width="0dp"
-            android:layout_margin="10dp"
-            android:text="000"
-            android:textColor="#F6DD04"
-            android:gravity="center"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-        <TextView
-            android:background="#294A2A"
-            android:layout_width="0dp"
-            android:layout_margin="10dp"
-            android:text="1/10"
-            android:textColor="#F6DD04"
-            android:gravity="center"
-            android:textSize="40sp"
-            android:textStyle="bold"
-            android:layout_height="match_parent"
-            android:layout_weight="1"/>
-
-    </LinearLayout>
-    <TextView
-        android:background="#131313"
-        android:layout_width="wrap_content"
-        android:layout_margin="10dp"
-        android:text="30"
-        android:padding="20dp"
-        android:textColor="#F6DD04"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:textSize="33sp"
-        android:textStyle="bold"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
-    <LinearLayout
         android:layout_weight="2"
-        android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:orientation="horizontal"
+        android:weightSum="2">
         <TextView
-            android:background="#192255"
-            android:layout_width="match_parent"
-            android:layout_margin="20dp"
-            android:text="Hello"
-            android:padding="20dp"
-            android:textColor="#ffffff"
-            android:layout_gravity="center"
+            android:id="@+id/txtScores"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/background2"
             android:gravity="center"
-            android:textSize="60sp"
-            android:textStyle="bold"
-            android:layout_height="match_parent" />
+            android:padding="5dp"
+            android:text="000"
+            android:textColor="@color/yellow"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="25sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform" />
+        <TextView
+            android:id="@+id/txtTop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_weight="1"
+            android:background="@drawable/background2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="000"
+            android:textColor="@color/yellow"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="25sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform" />
 
     </LinearLayout>
-    <LinearLayout
-        android:background="#223C23"
-        android:layout_weight="3"
-        android:orientation="vertical"
+
+
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="0dp"
+        android:layout_marginBottom="20dp"
+        android:layout_weight="1.5">
+
+        <TextView
+            android:id="@+id/txtTimes"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/background3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:text="00"
+            android:textColor="@color/yellow"
+            app:autoSizeMaxTextSize="100sp"
+            app:autoSizeMinTextSize="25sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_weight="2.5"
+        android:background="@drawable/background2"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Loading..."
+        android:textColor="#fafaf9"
+        android:textStyle="bold"
+        app:autoSizeMaxTextSize="70sp"
+        app:autoSizeMinTextSize="30sp"
+        app:autoSizeStepGranularity="1sp"
+        app:autoSizeTextType="uniform" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="30sp"
+        android:layout_weight="3"
+        android:background="@drawable/background2"
+        android:orientation="vertical"
+        android:weightSum="2">
+
+
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="1">
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
             <Button
+                android:id="@+id/btnA"
                 android:layout_width="0dp"
-                android:layout_margin="10dp"
-                android:text="Xin chào"
-                android:textAllCaps="false"
-                android:textSize="25sp"
-                android:textStyle="bold"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_selectbtn"
+                android:padding="5dp"
+                android:text="A"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform" />
+
             <Button
-                android:text="Tức giận"
-                android:textSize="25sp"
-                android:textAllCaps="false"
-                android:textStyle="bold"
+                android:id="@+id/btnB"
                 android:layout_width="0dp"
-                android:layout_margin="10dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"/>
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:orientation="horizontal"
-            android:layout_weight="1">
-            <Button
-                android:text="Tạm biệt"
-                android:textSize="25sp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_selectbtn"
+                android:padding="5dp"
+                android:text="B"
+                android:textColor="@android:color/white"
                 android:textStyle="bold"
-                android:layout_width="0dp"
-                android:textAllCaps="false"
-                android:layout_margin="10dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
-            <Button
-                android:text="Vĩnh biệt"
-                android:textSize="25sp"
-                android:textAllCaps="false"
-                android:textStyle="bold"
-                android:layout_width="0dp"
-                android:layout_margin="10dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"/>
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform" />
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnC"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_selectbtn"
+                android:padding="5dp"
+                android:text="C"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform" />
+
+            <Button
+                android:id="@+id/btnD"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/custom_selectbtn"
+                android:padding="5dp"
+                android:text="D"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"
+                app:autoSizeMaxTextSize="20sp"
+                app:autoSizeMinTextSize="10sp"
+                app:autoSizeStepGranularity="1sp"
+                app:autoSizeTextType="uniform" />
+
+        </LinearLayout>
 
     </LinearLayout>
 
-
-
-</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

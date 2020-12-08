@@ -1,45 +1,99 @@
 package com.notin.senglish.fragments
 
-import android.app.Activity
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Observer
+import androidx.lifecycle.ViewModelProvider
 import com.notin.senglish.R
+import com.notin.senglish.dao.EnglishViewModel
+import com.notin.senglish.model.English
 import kotlinx.android.synthetic.main.fragment_exam.*
+import java.util.*
+import kotlin.collections.ArrayList
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [ExamFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class ExamFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
         }
     }
 
+    var listEnglish = ArrayList<English>()
+    @SuppressLint("FragmentLiveDataObserve")
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         (activity as AppCompatActivity).supportActionBar!!.setDisplayHomeAsUpEnabled(true)
         (activity as AppCompatActivity).supportActionBar!!.setHomeAsUpIndicator(R.drawable.ic_main_menu)
-        //.text="ngo Tien"
         super.onActivityCreated(savedInstanceState)
+
+        var englishModel =  ViewModelProvider(this).get(EnglishViewModel::class.java)
+        englishModel.getAllEnglish.observe(this, Observer {englishes->
+            for(i in englishes){
+                listEnglish.add(i)
+            }
+        })
+        startExam()
+
+
     }
+    fun startExam(){
+        loadQuestionByIndex(0)
+    }
+
+    fun loadQuestionByIndex(index:Int){
+        if(index <= listEnglish.size-1){
+            txtQuestion.text = listEnglish[index].name
+        }
+        var indexAnswer:Array<Int> = arrayOf(-1, -1, -1, -1)
+        indexAnswer[1]= 1
+        println("index 1="+indexAnswer[1])
+
+        var rd = Random()
+//        for(i in 0..2){
+//            do{
+//                println("size english="+listEnglish.size)
+//                indexAnswer[i] = rd.nextInt(listEnglish.size)
+//            }while(indexAnswer[i] == index && isHaveArray(indexAnswer, indexAnswer[i]))
+//        }
+//
+//        var indexAnswerTrue = rd.nextInt(4)
+//        when(indexAnswerTrue){
+//            0->{
+//                setAnswer(index,indexAnswer[0], indexAnswer[1], indexAnswer[2])
+//            }
+//            1->{
+//                setAnswer(indexAnswer[0],index, indexAnswer[1], indexAnswer[2])
+//            }
+//            2->{
+//                setAnswer(indexAnswer[0], indexAnswer[1],index, indexAnswer[2])
+//            }
+//            3->{
+//                setAnswer(indexAnswer[0], indexAnswer[1], indexAnswer[2], index)
+//            }
+//        }
+    }
+
+    fun isHaveArray(arr:Array<Int>, number:Int):Boolean{
+        for(i in arr.indices){
+            if(number == arr[i]){
+                return true
+            }
+        }
+        return false
+    }
+    fun setAnswer(a1:Int, a2:Int, a3:Int, a4:Int){
+        btnA.text = listEnglish[a1].mean
+        btnB.text = listEnglish[a2].mean
+        btnC.text = listEnglish[a3].mean
+        btnD.text = listEnglish[a4].mean
+    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -50,21 +104,11 @@ class ExamFragment : Fragment() {
     }
 
     companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment ExamFragment.
-         */
-        // TODO: Rename and change types and number of parameters
+
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
             ExamFragment().apply {
                 arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
                 }
             }
     }
